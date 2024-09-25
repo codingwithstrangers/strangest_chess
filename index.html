@@ -4,84 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <title>Strangest_Chess</title>
+    <title>Chess Board</title>
 </head>
 <body>
-    <div class="board">
-        <div class="number_number_row">1</div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-
-        <div class="number_number_row">2</div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-
-        <div class="number_number_row">3</div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-
-        <div class="number_number_row">4</div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-
-        <div class="number_number_row">5</div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-
-        <div class="number_number_row">6</div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
+    <div class="chess-board">
         
-        <div class="number_number_row">7</div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-        <div class="square"></div>
-
-        <!-- columns -->
-        <div class="number-col-blank"></div>
-        <div class="number number-col">1</div>
-        <div class="number number-col">2</div>
-        <div class="number number-col">3</div>
-        <div class="number number-col">4</div>
-        <div class="number number-col">5</div>
-        <div class="number number-col">6</div>
-        <div class="number number-col">7</div>
-
+        <!-- Left numbers -->
+        <div class="number"></div> 
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        <div class="number"></div>
+        
+        <!-- Chessboard Rows -->
+        <div class="row">
+            <div class="number">8</div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="number">7</div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="number">6</div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="number">5</div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white">
+                
+            </div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="number">4</div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" fill="#000000" class="chess-piece">
+                <path fill="#000000" d="M60.81 476.91h300v-60h-300v60zm233.79-347.3l13.94 7.39c31.88-43.62 61.34-31.85 61.34-31.85l-21.62 53 35.64 19 2.87 33 64.42 108.75-43.55 29.37s-26.82-36.39-39.65-43.66c-10.66-6-41.22-10.25-56.17-12l-67.54-76.91-12 10.56 37.15 42.31c-.13.18-.25.37-.38.57-35.78 58.17 23 105.69 68.49 131.78H84.14C93 85 294.6 129.61 294.6 129.61z"></path>
+            </svg></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="number">3</div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        <div class="row">
+            <div class="number">2</div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+        </div>
+        <div class="row">
+            <div class="number">1</div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+            <div class="cell white"></div>
+            <div class="cell black"></div>
+        </div>
+        
+        <!-- Bottom numbers -->
+        <div class="number-row">
+            <div class="number"></div> <!-- Bottom-left empty cell -->
+            <div class="number">1</div>
+            <div class="number">2</div>
+            <div class="number">3</div>
+            <div class="number">4</div>
+            <div class="number">5</div>
+            <div class="number">6</div>
+            <div class="number">7</div>
+            <div class="number">8</div>
+        </div>
     </div>
+    
 </body>
 </html>

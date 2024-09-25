@@ -1,44 +1,46 @@
-*{
-    padding: 0;
-    border: rgb(191, 148, 148) 1px solid;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
     margin: 0;
-    /* border: 1px green solid; */
-    }
+}
 
-    /* body */
-    body{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        margin: 0;
-        background-color: rgb(141, 125, 157);
-    }
+.chess-board {
+    display: grid;
+    grid-template-columns: repeat(9, 50px); /* 8 squares + 1 for numbers */
+    grid-template-rows: repeat(9, 50px); /* 8 rows + 1 for bottom number row */
+}
 
-    .square:nth-child(odd)
-    { background-color: rgb(83, 36, 86); }
-    .board {
-        /* background-color: black; */
-        display: grid;
-        grid-template-columns: auto repeat(7,1fr);
-        grid-template-rows: repeat(7,1fr)auto;
-        gap: 1px;
-        width: 80vmin;
-        height: 80vmin;
-    }   
+.row {
+    display: contents; /* Allow the child cells to span the grid */
+}
 
-    .square{
-        background-color: white;
-        border: 1px solid #333
-    }
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border: 1px solid #5f3971;
+    height: 50px;
+    width: 50px;
+}
 
-/* moving the bord squares */
-    .board .square:nth-child(8n +2),
-    .board .square:nth-child(8n +4),
-    .board .square:nth-child(8n +6),
-    .board .square:nth-child(8n +8),
-    .board .square:nth-child(8n +10)
+.cell {
+    border: black 1px solid;
+    height: 50px;
+    width: 50px;
+}
 
-    {
-        background-color: aqua;
-    }
+.white {
+    background-color: #51365f;
+}
+
+.black {
+    background-color:#ffffff;
+}
+
+.number-row {
+    display: contents; /* Allow the child cells to span the grid */
+}
